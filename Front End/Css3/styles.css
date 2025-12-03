@@ -1,13 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    color: black;
-    background-color: rgb(255, 255, 255);
-    font-family: Arial, sans-serif;
-
+    box-sizing: border-box;
 }
 
 header {
@@ -15,4 +9,55 @@ header {
     padding: 30px;
     text-align: center;
 
+}
+
+body {
+    font-family: courier new, roboto mono, fira code;
+    background-color: #000000;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #00ff41;
+    margin: 8px;
+    padding: 10px 10px 10px 0px;
+    
+}
+
+li {
+    margin: 16px;
+    color: #cccccc;
+    list-style: none;
+}
+
+li::before{
+    color: #00ff41;
+    content: "> "
+}
+
+.link {
+    color: #00ffff;
+    margin: 8px;
+    padding: 10px 10px 10px 0px;
+    text-decoration:underline;
+    
+}
+
+.link:active{
+    color: #cccccc;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #00ff41;
+}
+
+.link::before{
+    content: "/";
+}
+
+p {
+    color: #cccccc;
+    margin: 8px;
+    padding: 0px;
 }
